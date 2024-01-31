@@ -4,11 +4,21 @@
   box-sizing: border-box;
 }
 
+.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.hide {
+  display: none;
+}
+
 .todo-app {
   display: flex;
   flex-direction: column;
   padding: 50px;
   gap: 10px;
   background-color: rgba(175, 227, 224, 0.779);
+  height: 100vh;
 }
 

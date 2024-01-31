@@ -1,7 +1,39 @@
 .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    border: 1px black solid;
-    background-color: rgb(255, 255, 255);
+    border: 1px rgb(50, 35, 2) solid;
+    background-color: rgb(240, 240, 225);
+}
+
+.task.done {
+    background-color: rgb(171, 230, 171);
+    color: rgba(31, 12, 12, 0.926);
+    border: 1px rgb(17, 36, 1) solid;
+}
+
+.task span {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.task .cross {
+    color: red;
+}
+
+.task .tick {
+    color: rgb(6, 69, 6);
+    margin-right: 5px;
+}
+
+.task .pending {
+    margin-right: 5px;
+    color: rgb(57, 57, 3)
 }

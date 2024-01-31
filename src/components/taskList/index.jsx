@@ -1,15 +1,16 @@
 import Task from "../task"
 import "./index.css"
 
-export default function TaskList({tasks}){
-    return (    
-          <div className="task-list">
+export default function TaskList({ tasks, handleTaskDblClick }) {
+
+    return (
+        <div className="task-list">
             {
-                tasks.map(({id,message}) => {
-                    return <Task key={id} message={message}/>
+                tasks.map(({ id, message, status }) => {
+                    return <Task key={id} id={id} message={message} onDblClick={handleTaskDblClick} status={status} />
                 })
             }
-          </div>   
+        </div>
     )
 }
 
