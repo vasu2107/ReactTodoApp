@@ -1,9 +1,7 @@
 .task {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 10px;
     width: 100%;
     border-radius: 5px;
     border: 1px rgb(50, 35, 2) solid;
@@ -17,11 +15,43 @@
 }
 
 .task span {
-    text-align: center;
     display: flex;
     align-items: center;
     align-content: center;
-    vertical-align: middle;
+    word-break: break-all;
+    height: 100%;
+}
+
+.task .task_message {
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.task .task_message:hover {
+    background-color: rgb(222, 222, 191);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.task.done .task_message:hover {
+    background-color: rgb(128, 205, 128);
+    border-radius: 5px 0px 0px 5px;
+}
+
+.task .deleteButton {
+    padding: 10px;
+    flex: 0;
+    cursor: pointer;
+}
+
+.task .deleteButton:hover {
+    background-color: rgb(222, 222, 191);
+    border-radius: 0px 5px 5px 0px;
+}
+
+.task.done .deleteButton:hover {
+    background-color: rgb(128, 205, 128);
+    border-radius: 0px 5px 5px 0px;
 }
 
 .task .cross {

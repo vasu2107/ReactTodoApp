@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { values } from 'ramda';
+import { values, omit } from 'ramda';
 import { useState } from "react"
 import TaskList from "./components/taskList"
 import AddTodo from "./components/addTodo";
@@ -35,10 +35,15 @@ export default function App() {
     updateTasks(updatedTasks);
   };
 
+  const deleteTask = (id) => {
+    const updatedTasks = omit([id], tasks);
+    updateTasks(updatedTasks);
+  };
+
   return (
     <div className="todo-app">
       <AddTodo addTask={addTask} />
-      <TaskList tasks={values(tasks)} handleTaskDblClick={toggleTaskStatus} />
+      <TaskList tasks={values(tasks)} handleTaskDblClick={toggleTaskStatus} deleteTask={deleteTask} />
     </div>
   )
 }
