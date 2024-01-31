@@ -1,6 +1,9 @@
 .button {
-    padding: 5px;
+    padding: 10px;
     background-color: cadetblue ;
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 208, 255);
     border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }

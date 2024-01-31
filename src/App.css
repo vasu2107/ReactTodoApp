@@ -3,3 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 10px;
+  background-color: rgba(175, 227, 224, 0.779);
+}
+

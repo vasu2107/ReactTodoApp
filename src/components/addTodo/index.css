@@ -1,0 +1,23 @@
+.addTodo {
+    display: flex;
+    gap: 8px;
+}
+
+.addTodo > input {
+    display: flex;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.addTodo .add-btn {
+    display: flex;
+    background-color: darkgreen;
+    border: 1px solid darkgreen;
+    color: white;
+    /* width: 80px; */
+}
+
+
