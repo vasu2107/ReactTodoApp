@@ -1,6 +1,7 @@
 import { useState } from "react"
 import TaskList from "./components/taskList"
 import AddTodo from "./components/addTodo";
+import './index.css'
 
 const defaultTasks = [
   {
